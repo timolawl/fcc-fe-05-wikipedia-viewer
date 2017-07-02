@@ -1,0 +1,101 @@
+
+$primary-color: #ffcc66;
+$primary-light: #e0c285;
+$background: #b3b3b3;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Istok+Web|Merriweather');
+
+*, :before, :after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+html {
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+  &:link {
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: black;
+    .entry {
+      background-color: $primary-color;
+    }
+  }
+  &:active {
+    color: black;
+  }
+}
+
+.queryfield {
+  height: 1.2rem;
+  vertical-align: bottom;
+}
+
+.mystery {
+  &:hover {
+    border-bottom: 4px solid $primary-color;
+  }
+ // background: linear-gradient(to top, $primary-color, $background);
+}
+
+.viewer {
+  margin-top: 3rem;
+  text-align: center;
+//display: flex;
+//  align-items: center;
+//  justify-content: center;
+  
+  &__nav {
+    //display: block;
+  }
+  
+  &__title {
+    font-family: Merriweather;
+    font-size: 3rem;
+    padding: 1rem;
+    background-color: $primary-color;
+    margin: 1rem 0;
+  }
+  
+  &__input {
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin: 1.2rem 0;
+  //  background-color: blue;
+  }
+}
+
+.entry {
+  text-align: left;
+  display: inline-block;
+  height: auto;
+  width: 65%;
+  background-color: $primary-light;
+  margin: 0.5rem 0;
+  
+  &__title {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+  &__snippet {
+    font-family: 'Istok Web';
+    padding: 1rem 1.5rem;
+  }
+}
+
+.is-invisible {
+  visibility: hidden;
+}
+
